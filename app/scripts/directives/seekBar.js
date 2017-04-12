@@ -32,9 +32,9 @@
         });
         
         var percentString = function() {
-          var value = scope.value;
+          var test = scope.value;
           var max = scope.max;
-          var percent = value / max * 100;
+          var percent = test / max * 100;
           return percent + "%";
         };
         
@@ -69,7 +69,7 @@
         
         var notifyOnChange = function(newValue) {
           if (typeof scope.onChange === 'function') {
-            scope.onChange({value: newValue});
+            scope.onChange({test: newValue});
           }
         };
       }
